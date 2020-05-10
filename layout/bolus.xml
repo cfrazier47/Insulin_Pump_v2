@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnHomePercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginTop="2dp"
+                android:width="65dp"
+                android:height="35dip"
+                android:background="@drawable/custom_button"
+                android:includeFontPadding="false"
+                android:minWidth="65dip"
+                android:minHeight="35dip"
+                android:onClick="goHome"
+                android:text="@string/btnHome"
+                android:textColor="#FFFFFF" />
+
+            <ImageView
+                android:id="@+id/imgBatteryInsulin"
+                android:src="@drawable/battery_level"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:contentDescription="@string/imgBatteryInsulin" />
+
+            <TextView
+                android:id="@+id/lblBatteryInsulin"
+                android:text="@string/lblBatteryInsulin"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_gravity="end"
+                android:textColor="#DA000000"
+                android:textSize="12sp"
+                android:paddingStart="0dp"
+                android:paddingEnd="2dp" />
+
+            <ImageView
+                android:id="@+id/imgInsulin"
+                android:src="@drawable/insulin_res"
+                android:contentDescription="@string/imgInsulin"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:background="#000E6F64" />
+
+            <TextView
+                android:id="@+id/lblInsulinPercent"
+                android:text="@string/lblInsulin"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_gravity="end"
+                android:textColor="#DA000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/lblTimeLog"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:background="#00F8F8F8"
+                android:gravity="end"
+                android:textAlignment="gravity"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lblGlucoseLevel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/lblGlucoseLevel"
+                android:textColor="#8D020202" />
+
+            <EditText
+                android:id="@+id/txtGlucoseInsulin"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:autofillHints=""
+                android:backgroundTint="#fc0341"
+                android:ems="10"
+                android:gravity="center"
+                android:inputType="number"
+                android:maxLines="1"
+                android:paddingVertical="0dp"
+                android:text="@string/txtGlucoseInsulin"
+                android:textColor="#DA000000"
+                android:textSize="35sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBolusInsulin"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="150dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_button"
+                android:text="@string/btnBolusInsulin"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:layout_marginRight="2dp"
+                android:layout_marginLeft="2dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

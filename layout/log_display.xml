@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayLog">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnHomePercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:width="65dp"
+                android:height="35dip"
+                android:background="@drawable/custom_button"
+                android:includeFontPadding="false"
+                android:minWidth="65dip"
+                android:minHeight="35dip"
+                android:onClick="goHome"
+                android:text="@string/btnHome"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="2dp"/>
+
+            <ImageView
+                android:id="@+id/imgBatteryLog"
+                android:src="@drawable/battery_level"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:contentDescription="@string/imgBatteryInsulin" />
+
+            <TextView
+                android:id="@+id/lblBatteryLog"
+                android:text="@string/lblBatteryLog"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_gravity="end"
+                android:background="#000E6F64"
+                android:textColor="#DA000000"
+                android:textSize="12sp"
+                android:paddingStart="0dp"
+                android:paddingEnd="2dp" />
+
+            <ImageView
+                android:id="@+id/imgInsulinLog"
+                android:src="@drawable/insulin_res"
+                android:contentDescription="@string/imgInsulin"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:background="#000E6F64" />
+
+            <TextView
+                android:id="@+id/lblInsulinPercent"
+                android:text="@string/lblInsulin"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_gravity="end"
+                android:textColor="#DA000000"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/lblTimeLog"
+                android:layout_width="83dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:textColor="#000000"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtColumnTitles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:textSize="11sp"
+                android:typeface="monospace"
+                android:textColor="#8D020202"
+                android:text="@string/txtColumnTitles" />
+
+            <ListView
+                android:id="@+id/lstLog"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#bcbdae"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

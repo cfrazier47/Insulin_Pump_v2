@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Insulin Pump</string>
+    <!--
+This string is used for square devices and overridden by hello_world in
+values-round/strings.xml for round devices.
+-->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="txtGlucose">***</string>
+    <string name="txtUnit">mg/dL</string>
+    <string name="btnLog">View Log</string>
+    <string name="btnPercent">View Info</string>
+    <string name="btnInsulin">Get Dosage</string>
+    <string name="lblBattery">--%</string>
+    <string name="lblBatteryInsulin">--%</string>
+    <string name="lblBatteryPercentPer">--%</string>
+    <string name="txtBatteryPercent">--%</string>
+    <string name="lblBatteryLog">--%</string>
+    <string name="lblInsulin">----------u</string>
+    <string name="txtInsulinUnits">---------u</string>
+    <string name="btnHome">home</string>
+    <string name="lblTimeMain">***</string>
+    <string name="imgBatteryMain">TODO</string>
+    <string name="imgInsulinMain">TODO</string>
+    <string name="lblGlucoseLevel">Insert Blood Glucose Level:</string>
+    <string name="btnHomePercent">home</string>
+    <string name="lblBatteryPercent">Battery Percentage</string>
+    <string name="lblInsulinPercent">Insulin Units</string>
+    <string name="imgBatteryInsulin">TODO</string>
+    <string name="imgInsulin">TODO</string>
+    <string name="lblInsulinSelection">Select Insulin Type:</string>
+    <string name="btnBasal">Basal</string>
+    <string name="btnBolus">Bolus</string>
+    <string name="lblGlucoseInsulin">----</string>
+    <string name="txtGlucoseInsulin"></string>
+    <string name="txtColumnTitles">"   Date      Time    BS     Iu    E"</string>
+    <string name="txtPreferences">Preferences</string>
+    <string name="lblResistance">Insulin Resistance:</string>
+    <string name="lblSensor">Use Insulin Sensor:</string>
+    <string name="btnBolusInsulin">Get Insulin</string>
+    <string name="lblCarbs">Insert Carbs:</string>
+    <string name="btnBasalInsulin">Get Insulin</string>
+    <string name="txtCarbs"></string>
+</resources>
